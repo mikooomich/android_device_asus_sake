@@ -351,6 +351,9 @@ PRODUCT_PACKAGES += \
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # QMI
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
