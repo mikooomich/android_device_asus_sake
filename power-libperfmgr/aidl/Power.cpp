@@ -146,9 +146,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             }
             break;
         case Mode::LAUNCH:
-            if (mVRModeOn || mSustainedPerfModeOn) {
-                break;
-            }
             [[fallthrough]];
         case Mode::DOUBLE_TAP_TO_WAKE:
             [[fallthrough]];
@@ -175,7 +172,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         case Mode::GAME_LOADING:
             [[fallthrough]];
         default:
-            if (mBatterySaverOn) break;
+            if (mBatterySaverOn || mSustainedPerfModeOn) {
+                break;
+            }
             if (enabled) {
                 HintManager::GetInstance()->DoHint(toString(type));
             } else {
