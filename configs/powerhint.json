@@ -77,6 +77,36 @@
       "ResetOnInit": true
     },
     {
+      "Name": "UclampTAMin",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+      "Values": [
+        "0",
+        "25",
+        "30",
+        "45"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampTALatency",
+      "Path": "/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive",
+      "Values": [
+        "1",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "UclampFgMax",
+      "Path": "/dev/cpuctl/foreground/cpu.uclamp.max",
+      "Values": [
+        "0",
+        "50"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "GPUMaxFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
@@ -288,21 +318,15 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterMinFreq",
+      "Node": "UclampTAMin",
       "Duration": 0,
-      "Value": "1075200"
+      "Value": "30"
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "CPUBigPlusClusterMinFreq",
+      "Node": "UclampTALatency",
       "Duration": 0,
-      "Value": "1075200"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 0,
-      "Value": "1401600"
+      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
@@ -336,33 +360,9 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMaxFreq",
+      "Node": "UclampTAMin",
       "Duration": 3000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigPlusClusterMaxFreq",
-      "Duration": 3000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMinFreq",
-      "Duration": 3000,
-      "Value": "1075200"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigPlusClusterMinFreq",
-      "Duration": 3000,
-      "Value": "1075200"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPULittleClusterMinFreq",
-      "Duration": 3000,
-      "Value": "1612800"
+      "Value": "45"
     },
     {
       "PowerHint": "LAUNCH",
