@@ -280,10 +280,17 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # NFC
-$(call inherit-product, vendor/nxp/nfc/nfc-vendor-product.mk)
-$(call inherit-product, vendor/nxp/secure_element/se-vendor-product.mk)
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.nxp \
+    android.hardware.secure_element@1.2.vendor \
+    com.android.nfc_extras \
+    Tag \
 
 PRODUCT_COPY_FILES += \
+ frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_eSE/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_eSE/android.hardware.se.omapi.ese.xml
 
