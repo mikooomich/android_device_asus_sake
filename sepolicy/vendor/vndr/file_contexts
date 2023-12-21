@@ -1,0 +1,2 @@
+# UFS
+/sys/devices(/platform)?/soc/[a-f0-9]+.ufshc/clkgate_enable          u:object_r:vendor_sysfs_scsi_host:s0

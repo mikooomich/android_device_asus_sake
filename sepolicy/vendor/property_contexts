@@ -35,3 +35,6 @@ vendor.thermal.engine.version       u:object_r:vendor_thermal_prop:s0
 persist.vendor.zram    u:object_r:vendor_mpctl_prop:s0
 vendor.asus.zram       u:object_r:vendor_mpctl_prop:s0
 vendor.zram.           u:object_r:vendor_mpctl_prop:s0
+
+# Power HAL
+vendor.powerhal.                   u:object_r:vendor_power_prop:s0

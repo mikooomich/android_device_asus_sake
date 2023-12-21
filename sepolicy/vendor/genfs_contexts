@@ -59,3 +59,6 @@ genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup           
 genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup                                                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,spcom/wakeup                                                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup                                                     u:object_r:sysfs_wakeup:s0
+
+# Power
+genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
