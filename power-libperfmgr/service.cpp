@@ -63,7 +63,7 @@ int main() {
     const std::string instance = std::string() + Power::descriptor + "/default";
     binder_status_t status = AServiceManager_addService(pw->asBinder().get(), instance.c_str());
     CHECK(status == STATUS_OK);
-    LOG(INFO) << "Xiaomi Power HAL AIDL Service with Extension is started.";
+    LOG(INFO) << "Asus-Sake Power HAL AIDL Service with Extension is started.";
 
     if (HintManager::GetInstance()->GetAdpfProfile()) {
         PowerHintMonitor::getInstance()->start();
@@ -78,6 +78,6 @@ int main() {
     ABinderProcess_joinThreadPool();
 
     // should not reach
-    LOG(ERROR) << "Xiaomi Power HAL AIDL Service with Extension just died.";
+    LOG(ERROR) << "Asus-Sake Power HAL AIDL Service with Extension just died.";
     return EXIT_FAILURE;
 }

@@ -54,11 +54,11 @@ ifneq ($(TARGET_TAP_TO_WAKE_NODE),)
     LOCAL_CFLAGS += -DTAP_TO_WAKE_NODE=\"$(TARGET_TAP_TO_WAKE_NODE)\"
 endif
 
-LOCAL_MODULE := android.hardware.power-service.xiaomi-libperfmgr
-LOCAL_INIT_RC := android.hardware.power-service.xiaomi-libperfmgr.rc
+LOCAL_MODULE := android.hardware.power-service.asus-libperfmgr
+LOCAL_INIT_RC := android.hardware.power-service.asus-libperfmgr.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_VENDOR_MODULE := true
-LOCAL_VINTF_FRAGMENTS := android.hardware.power-service.xiaomi.xml
+LOCAL_VINTF_FRAGMENTS := android.hardware.power-service.asus.xml
 
 include $(BUILD_EXECUTABLE)
 
