@@ -338,8 +338,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/privapp-permissions-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-asus.xml
 
 # Power
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/google/interfaces \
+    hardware/google/pixel
+
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.oplus-libperfmgr
+
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
