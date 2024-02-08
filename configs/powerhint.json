@@ -405,12 +405,6 @@
     },
     {
       "PowerHint": "INTERACTIVE",
-      "Node": "CPUBigPlusClusterGovernor",
-      "Duration": 0,
-      "Value": "schedutil"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
       "Node": "CPULittleClusterUpRateLimit",
       "Duration": 0,
       "Value": "500"
@@ -432,18 +426,6 @@
       "Node": "CPUBigClusterDownRateLimit",
       "Duration": 0,
       "Value": "10000"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUBigPlusClusterUpRateLimit",
-      "Duration": 0,
-      "Value": "500"
-    },
-    {
-      "PowerHint": "INTERACTIVE",
-      "Node": "CPUBigPlusClusterDownRateLimit",
-      "Duration": 0,
-      "Value": "5000"
     },
     {
       "PowerHint": "LAUNCH",
