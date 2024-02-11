@@ -184,7 +184,8 @@
       	 "540000000",
         "443000000",
         "379000000",
-        "315000000"
+        "315000000",
+        "150000000"
       ],
       "DefaultIndex": 3,
       "ResetOnInit": true
@@ -531,6 +532,12 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "443000000"
+    },
+    {
+      "PowerHint": "LOW_POWER",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "150000000"
     }
   ]
 }
