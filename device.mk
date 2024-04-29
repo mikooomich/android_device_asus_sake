@@ -343,9 +343,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/privapp-permissions-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-asus.xml
 
 # Power
+
+$(call inherit-product, $(LOCAL_PATH)/libqti-perfd-client/libqti-perfd-client.mk)
+$(call inherit-product, $(LOCAL_PATH)/power-libperfmgr/power-libperfmgr.mk)
+
 PRODUCT_PACKAGES += \
-    libqti-perfd-client \
-    power-libperfmgr
+    android.hardware.power@1.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
