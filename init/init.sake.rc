@@ -31,3 +31,17 @@ on property:vendor.post_boot.parsed=1
     # IRQ 240: kgsl_3d0_irq
     write /proc/irq/243/smp_affinity_list 2
     write /proc/irq/240/smp_affinity_list 1
+
+
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    override
+    class early_hal
+    user nfc
+    group nfc
+    disabled
+
+
+on post-fs-data && property:ro.boot.product.hardware.sku=nfc
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
