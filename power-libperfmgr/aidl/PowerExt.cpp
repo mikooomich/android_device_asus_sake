@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.oneplus.ext-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.asus.ext-libperfmgr"
 
 #include "PowerExt.h"
 

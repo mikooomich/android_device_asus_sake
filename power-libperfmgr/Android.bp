@@ -14,7 +14,7 @@
 // limitations under the License.
 
 cc_library {
-    name: "libdisppower-oneplus",
+    name: "libdisppower-asus",
     proprietary: true,
     srcs: [
         "disp-power/DisplayLowPower.cpp",
@@ -30,10 +30,10 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.oneplus-libperfmgr",
+    name: "android.hardware.power-service.asus-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.oneplus-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.oneplus.xml"],
+    init_rc: ["aidl/android.hardware.power-service.asus-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.asus.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V4-ndk",
@@ -42,7 +42,7 @@ cc_binary {
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-oneplus",
+        "libdisppower-asus",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk",

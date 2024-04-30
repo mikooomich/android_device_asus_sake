@@ -1,4 +1,4 @@
-service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.oneplus-libperfmgr
+service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.asus-libperfmgr
     class hal
     user root
     group system
