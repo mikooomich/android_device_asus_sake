@@ -6,10 +6,10 @@
 <resources>
 
     <!-- Landscape, just use the regular values -->
-    <dimen name="status_bar_padding_start">40px</dimen>
-    <dimen name="status_bar_padding_end">40px</dimen>
+    <dimen name="status_bar_padding_start">0px</dimen>
+    <dimen name="status_bar_padding_end">0px</dimen>
 
     <!-- for 20dp of padding at 3.5px/dp at default density -->
-    <dimen name="rounded_corner_content_padding">40px</dimen>
+    <dimen name="rounded_corner_content_padding">0px</dimen>
 
 </resources>
