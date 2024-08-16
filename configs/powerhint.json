@@ -175,10 +175,8 @@
         "540",
         "443",
         "379",
-        "315",
-        "150"
+        "315"
       ],
-      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -482,15 +480,15 @@
     },
     {
       "PowerHint": "LOW_POWER",
-      "Node": "GPUMaxFreq",
+      "Node": "CPUBigPlusClusterMaxFreq",
       "Duration": 0,
-      "Value": "443"
+      "Value": "1324800"
     },
     {
       "PowerHint": "LOW_POWER",
-      "Node": "GPUMinFreq",
+      "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "150"
+      "Value": "443"
     }
   ]
 }   
