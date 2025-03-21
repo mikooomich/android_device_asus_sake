@@ -254,7 +254,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 # Kernel
-PRODUCT_ENABLE_UFFD_GC := true
+PRODUCT_ENABLE_UFFD_GC := false
 
 # Keymaster
 PRODUCT_COPY_FILES += \
