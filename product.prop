@@ -6,7 +6,7 @@ audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
 # eBPF
-ro.bpf.kver_override=5.10.2
+ro.bpf.kver_override=5.10.239
 
 # LMKD
 ro.lmk.kill_heaviest_task=true
