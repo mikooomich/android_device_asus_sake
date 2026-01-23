@@ -330,6 +330,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
+    Launcher3DeviceOverlay \
     NcmTetheringOverlay \
     SystemUIResCommon \
     TelephonyResCommon \
